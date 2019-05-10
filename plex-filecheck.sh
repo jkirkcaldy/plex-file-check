@@ -1,0 +1,23 @@
+#! /bin/sh
+
+echo Where are your TV Shows stored?
+
+read tvshows
+
+echo Thanks, how about movies?
+
+read movies
+
+echo Starting now. If there have been many files added, this may take a long time!
+
+cd "$tvshows"
+
+find . -ctime -5 -type f -iname "*.mkv" ! -iname "*.mp4" ! -iname "*.mov" -exec  ~/scripts/checkfile.py \{\} \; > /var/log/plex-file-check/TV_SHOWS.log
+
+echo TV Shows have finished. View the log at /var/log/plex-file-check/MOVIES.log
+
+cd "$movies"
+
+find . -ctime -5 -type f -iname "*.mkv" ! -iname "*.mp4" ! -iname "*.mov" -exec  ~/scripts/checkfile.py \{\} \; > /var/log/plex-file-check/MOVIES.log
+
+echo Movies have finished. View the log at /var/log/plex-file-check/MOVIES.log
