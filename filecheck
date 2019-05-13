@@ -1,20 +1,20 @@
 #! /bin/sh
 
-$Drive01=/mnt/Drive01
-$Drive02=/mnt/Drive02
-$Drive03=/mnt/Drive03
-$Drive04=/mnt/Drive04
-$Drive05=/mnt/Drive05
-$Drive06=/mnt/Drive06
-$Drive07=/mnt/Drive07
-$Drive08=/mnt/Drive08
-$Drive09=/mnt/Drive09
-$Drive10=/mnt/Drive10
-$Drive11=/mnt/Drive11
-$Drive12=/mnt/Drive12
-$Drive13=/mnt/Drive13
-$Drive14=/mnt/Drive14
-$Drive15=/mnt/Drive15
+$Drive01= /mnt/Drive01
+$Drive02= /mnt/Drive02
+$Drive03= /mnt/Drive03
+$Drive04= /mnt/Drive04
+$Drive05= /mnt/Drive05
+$Drive06= /mnt/Drive06
+$Drive07= /mnt/Drive07
+$Drive08= /mnt/Drive08
+$Drive09= /mnt/Drive09
+$Drive10= /mnt/Drive10
+$Drive11= /mnt/Drive11
+$Drive12= /mnt/Drive12
+$Drive13= /mnt/Drive13
+$Drive14= /mnt/Drive14
+$Drive15= /mnt/Drive15
 
 
 echo Starting now. If there have been many files added, this may take a long time!
