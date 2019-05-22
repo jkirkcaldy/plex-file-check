@@ -14,4 +14,5 @@ if __name__ == "__main__":
             print('OK|' + filename)
         else:
             print('ERROR|' + filename)
+            os.remove filename
 
