@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import os
 import sys
+import subprocess
 def checkfile(filename):
     command = "echo 'seek 95 1' | mplayer -slave -msglevel all=4 -benchmark -vo null -nosound \"" + filename + "\" 2>&1"
     output = os.popen(command).read()
@@ -15,3 +16,5 @@ if __name__ == "__main__":
         else:
             print('ERROR|' + filename)
             os.remove(filename)
+
+subprocess.call(['sonarr-scan.sh'])
