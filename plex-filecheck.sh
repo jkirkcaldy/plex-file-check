@@ -11,6 +11,6 @@ echo Starting now. If there have been many files added, this may take a long tim
 
 cd $dir
 
-find . -ctime -$days -type f -iname "*.mkv" ! -iname "*.mp4" ! -iname "*.mov" -exec  ~/plex-file-check/checkfile.py \{\} \; > /var/log/test.log
+find . -ctime -$days -type f -iname "*.mkv" ! -iname "*.mp4" ! -iname "*.mov" -exec  ~/plex-file-check/checkfile.py \{\} \; > /var/log/$dir.log
 
-echo $dir have finished. View the log at log/plex-file-check/$dir.log
+echo $dir have finished. View the log at /var/log/plex-file-check/$dir.log
